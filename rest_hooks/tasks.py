@@ -9,7 +9,7 @@ from rest_hooks.utils import get_hook_model
 
 
 @shared_task
-def deliver_hook(self, target, payload, instance=None, hook_id=None, **kwargs):
+def deliver_hook(target, payload, instance=None, hook_id=None, **kwargs):
     """
     target:     the url to receive the payload.
     payload:    a python primitive data structure
